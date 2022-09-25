@@ -18,13 +18,13 @@ type pixelHandler struct {
 	repo pixel.Repository
 }
 
-func newPixelHandler(repo pixel.Repository) *pixelHandler {
+func NewPixelHandler(repo pixel.Repository) *pixelHandler {
 	return &pixelHandler{
 		repo: repo,
 	}
 }
 
-func (h *pixelHandler) get(ctx echo.Context) error {
+func (h *pixelHandler) Get(ctx echo.Context) error {
 	var p pixel.Pixel
 
 	if err := ctx.Bind(&p); err != nil {

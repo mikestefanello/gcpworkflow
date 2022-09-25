@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"cloud.google.com/go/pubsub"
-	"github.com/mikestefanello/gcpworkflow/config"
+	"github.com/mikestefanello/gcpworkflow/pkg/config"
 	"github.com/mikestefanello/gcpworkflow/pkg/pixel"
 )
 
